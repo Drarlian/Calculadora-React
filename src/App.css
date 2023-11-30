@@ -1,0 +1,34 @@
+.pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.estruturaCalculadora {
+  background-color: orange;
+  border-radius: 5px;
+  border: solid;
+}
+
+.estruturaVisor{
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+}
+
+.estruturaVisor input{
+  flex: 1; /* Fazendo o input ocupar todo o espaço da div */
+  font-size: large;
+  text-align: right;
+}
+
+.estruturaTeclado{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.estruturaTeclado button{
+  height: 40px;
+}
