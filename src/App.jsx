@@ -2,6 +2,7 @@ import { useState, useRef, useContext, useEffect } from 'react'
 import './App.css'
 import { ToastContainer, toast } from 'react-toastify';
 import { OperationsContext } from './contexts/OperationsContext';
+import React from 'react';
 
 
 function App() {
@@ -56,19 +57,19 @@ function App() {
 
     switch(operador){
       case '+':
-        valorOperacao = soma(Number(valor1), Number(valor2));
+        valorOperacao = `${soma(Number(valor1), Number(valor2))}`;
         break;
       case '-':
-        valorOperacao = subtracao(Number(valor1), Number(valor2));
+        valorOperacao = `${subtracao(Number(valor1), Number(valor2))}`;
         break;
       case '*':
-        valorOperacao = multiplicacao(Number(valor1), Number(valor2));
+        valorOperacao = `${multiplicacao(Number(valor1), Number(valor2))}`;
         break;
       case '/':
-        valorOperacao = divisao(Number(valor1), Number(valor2));
+        valorOperacao = `${divisao(Number(valor1), Number(valor2))}`;
         break;
       default:
-        valorOperacao = 0;
+        valorOperacao = valor1;
         break;
     }
 

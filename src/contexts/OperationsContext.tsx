@@ -8,19 +8,19 @@ export const OperationsContext = createContext({});
 
 export const OperationsProvider = ({ children }: ChildrenProps) => {
 
-    function soma(a: number, b: number){
+    function soma(a: number, b: number): number{
         return a + b;
     }
 
-    function subtracao(a: number, b: number) {
+    function subtracao(a: number, b: number): number{
         return a - b;
     } 
 
-    function multiplicacao(a: number, b: number){
+    function multiplicacao(a: number, b: number): number{
         return a * b;
     }
 
-    function divisao(a: number, b: number){
+    function divisao(a: number, b: number): number{
         return a / b;
     }
 
